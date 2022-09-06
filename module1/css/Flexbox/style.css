@@ -1,0 +1,38 @@
+.container {
+
+max-width:960px;
+margin: 100px auto;
+padding:10px;
+height:100vh;
+flex-direction:row;
+/*its by default is row .it allows us to change the direction of the main axis*/
+/*row , row-reverse,column,column-reverse*/
+flex-wrap: wrap;
+/*it determines how the items will wrap when they run out of space
+if u want to use flexbox , you must specify that the parent container is a flex container*/
+}
+.item {
+background: slateblue;
+color:aqua;
+font-size:20px;
+padding:20px;
+transition: .15s
+
+}
+
+.item:hover{
+    transform:scale(1.2);
+}
+.item:nth-of-type(1){
+
+    /*to change the order, use the order property.*/
+    order:2;
+    flex-grow:3;
+    /* will scalae proportionally to the flex-baxis*/
+    flex-shrink:1;
+    /*wiil change th escale at which each item shrinks */
+    flex: 1 0 100px;
+    /*flex:1;
+    flex is a short hand for grow, shrink, basis
+    flex:1 will provide equally sized items*/
+}

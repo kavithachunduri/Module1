@@ -1,0 +1,72 @@
+html {
+    box-sizing: border-box;
+    height: 100vh;
+  }
+  *,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1{
+    text-align: center;
+    color: yellow;
+    text-decoration: underline;
+}
+
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url("https://paulryan.com.au/wp-content/uploads/2015/01/high-resolution-wallpapers-25.jpg");
+    /* background-image: url("https://www.w3schools.com/css/img_tree.gif") , url("https://www.w3schools.com/css/paper.gif"); */
+    font-size: 1rem;
+    font-weight: 300;
+    color: #606161;
+    
+}
+
+
+button{
+    background-color:aqua;
+    color:black;
+    text-align: center;
+    font-size: 15px;  
+} 
+h2:hover {
+        
+    transform: scale( 1.5, 1.5 );
+  }
+
+
+.container1{  
+    text-align: center;  
+    /*border: 2px solid blueviolet; */ 
+    width: 50%;  
+    height: 500px;  
+    padding-top: 10px;  
+    float:left;
+    }  
+    .container{  
+        text-align: center;  
+        /*border: 2px solid blueviolet;  */
+        width: 50%;  
+        height: 500px;  
+        padding-top: 10px;  
+        float:right;
+    
+        }
+  
+  div{
+    text-align: center;
+    color: orangered;
+    font-size:20px;
+  }
+  p{
+    color:chartreuse;
+  
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    font-weight: 550;
+  }

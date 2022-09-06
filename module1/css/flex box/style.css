@@ -1,0 +1,48 @@
+.container{
+    max-width: 960px;
+    margin: 100px auto;
+    padding: 10px;
+    
+    height: 100vh;
+    flex-direction: row;
+        /* flex-direction allows you to change the direction of the main axis */
+        /* row, row-reverse, column, column-reverse */
+    flex-wrap: inherit;
+        /* Flex-wrap determines how the items will wrap when they run out of space */
+    /* If you want to use flexbox, you must specify that the parent container is a flex container*/
+        /* wrap, no-wrap, inherit, initial */
+    display: flex;
+    justify-content: space-between;
+        /* Moves along the main axis */
+        /* start, end, center, space-around, and space-between */
+    align-items: start;
+        /* Moves along the cross axis */
+        /* start, end, center, space-around, and space-between */
+}
+
+.item {
+    background: slateblue;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
+    border: steelblue 1 px solid;
+    margin: 10px;
+    transition: .15s ease-in-out;
+    /* flex-basis: 200px; */
+    /* Flex-basis is the main width of the item. Can be scaled using flex-grow. */
+}
+.item:hover{
+    transform: scale(1.2);
+}
+
+.item:nth-of-type(1){
+    /* To change the order, use the order property */
+    order: 2;
+    /* flex-grow: 3; */
+        /* Will scale proportionally to the flex-basis */
+    /* flex-shrink: 3; */
+        /* Will change the scale at which each item shrinks (e.g. browser resizing) */
+    flex: 1;
+    /* Flex is a shorthand for grow, shrink, and basis */
+    /* flex: 1 will provide equally-sized items */
+}
